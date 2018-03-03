@@ -1,6 +1,5 @@
-# gua.game.js
-JavaScript 写游戏
+# Block-Breaker
 
+## Screenshots
+![block-breaker](https://github.com/caesarii/Flappy-Bird/blob/master/screenshots/bird.gif)
 
-## todo
-- 封装 context scale translate
