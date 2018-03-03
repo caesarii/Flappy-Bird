@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>game 1</title>
+        <style media="screen">
+            canvas {
+                border: 1px black solid;
+            }
+        </style>
+        <!-- gua game 相关文件 -->
+        <script src='game/utils.js'></script>
+        <script src='game/mouse.js'></script>
+        <script src='game/GameObject.js'></script>
+        <script src='game/Game.js'></script>
+        <script src='game/GameScene.js'></script>
+        <script src='game/GameImage.js'></script>
+        <script src='game/GameAnimation.js'></script>
+        <script src='game/GameLabel.js'></script>
+        <script src='game/config.js'></script>
+
+        <!-- 场景文件 -->
+        <script src='scene/main/Pipes.js'></script>
+        <script src='scene/main/SceneMain.js'></script>
+
+        <!-- 结束和标题场景 -->
+        <script src='scene/end/SceneEnd.js'></script>
+        <script src='scene/title/SceneTitle.js'></script>
+        <script src="scene/spark/SceneSpark.js"> </script>
+        <!-- 关卡数据 -->
+        <script src='level.js'></script>
+    </head>
+    <body>
+        <canvas id="id-canvas" width="400" height="600"></canvas>
+        <hr>
+
+        <div class="">
+            <label for="" class="gua-label">
+
+                <input id=id-input-speed type="range" value="1">
+                帧率：
+            </label>
+
+            <!-- <textarea id="id-text-log" rows="20" cols="50"></textarea> -->
+        </div>
+        <div class="gua-controls">
+            <label for="" class="gua-label">
+                <input type="range" class="gua-auto-slider" id=""
+                       data-value="config.player_speed"
+                >
+                玩家速度：<span class="gua-label"></span>
+            </label>
+        </div>
+        <!--<div>-->
+            <!--<label for="" class="gua-label">-->
+                <!--<input type="range" class="gua-auto-slider" id=""-->
+                       <!--data-value="config.bullet_speed"-->
+                <!--&gt;-->
+                <!--bullet 速度：<span class="gua-label"></span>-->
+            <!--</label>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<label for="" class="gua-label">-->
+                <!--<input type="range" class="gua-auto-slider" id=""-->
+                       <!--data-value="config.fire_cooldown"-->
+                       <!--max=""-->
+                <!--&gt;-->
+                <!--冷却时间：<span class="gua-label"></span>-->
+            <!--</label>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<label for="" class="gua-label">-->
+                <!--<input type="range" class="gua-auto-slider" id=""-->
+                       <!--data-value="config.cloud_speed"-->
+                       <!--min="-10"-->
+                       <!--max="10"-->
+                <!--&gt;-->
+                <!--cloud 速度：<span class="gua-label"></span>-->
+            <!--</label>-->
+        <!--</div>-->
+    <script src=main.js></script>
+    <script src=controls.js></script>
+    </body>
+</html>
