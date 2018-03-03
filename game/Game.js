@@ -48,13 +48,14 @@ class Game {
         for (var i = 0; i < actions.length; i++) {
             var key = actions[i]
             var status =  g.keydowns[key]
+            log('key', )
             if(status === 'down') {
                 // 如果按键被按下, 调用注册的 action
                 g.actions[key]("down")
             } else if(status === 'up') {
                 g.actions[key]("up")
                 // 删除状态
-                g.keydowns[key] = null
+                g.keydowns[key] = ''
                 
             }
         }
@@ -71,7 +72,6 @@ class Game {
     }
     textureByName(name) {
         var g = this
-        log('image by name', g.images)
         var img = g.images[name]
         // var image = {
         //     w: img.width,

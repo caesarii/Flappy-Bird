@@ -44,7 +44,6 @@ class SceneMain extends GameScene {
             g.y = 540
             this.addElement(g)
             this.grounds.push(g)
-
         }
     }
 
@@ -74,10 +73,8 @@ class SceneMain extends GameScene {
 
             if(bird.collide(pipe)) {
                 // alert('colidde')
-                console.log('collide', bird.collide(pipe))
                 const s = new SceneEnd(game)
                 game.replaceScene(s)
-
             }
         })
 

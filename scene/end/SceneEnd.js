@@ -10,7 +10,7 @@ class SceneEnd extends GameScene {
         this.addElement(this.bg)
 
         game.registerAction('r', function(){
-            const s = new SceneMain(game)
+            const s = SceneTitle.new(game)
             game.replaceScene(s)
         })
     }

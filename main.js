@@ -67,8 +67,7 @@ const __main = function() {
     }
     const game = Game.new(30, images, function(g){
         // const s = new SceneMain(g)
-        const s = new SceneTitle(g)
-        log('scene', s.draw)
+        const s = SceneTitle.new(g)
         // const s = new SceneSpark(g)
         g.loadScene(s)
     })
